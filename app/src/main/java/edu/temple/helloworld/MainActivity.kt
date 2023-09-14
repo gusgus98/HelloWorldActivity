@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         
         // Respond to button click event per specifications
-
-
+        clickMeButton.setOnClickListener{
+        val name = nameEditText.text.toString()
+        val greeting = "Hello, $name"
+        displayTextView.text = greeting
+    }
     }
 }
