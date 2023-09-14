@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/displayTextView"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="152dp"
         android:gravity="center"
         android:text="Hello World!"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,11 +24,14 @@
         android:id="@+id/clickMeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:text="Click Me"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="188dp"
+        android:text="@string/click_me"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/nameEditText"
@@ -34,11 +39,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:ems="10"
-        android:hint="Enter your name"
+        android:hint="@string/enter_your_name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/displayTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/displayTextView"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
